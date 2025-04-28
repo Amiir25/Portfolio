@@ -4,237 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome-->
-    <script src="https://kit.fontawesome.com/6342bc0aa2.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- CSS -->
-    <link rel="stylesheet" href="portfolio.css">
     <title>Amir Sadik</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="wrapper">
-        <header>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ms-auto me-5">
-                            <a class="link nav-link" href="#about-me">About Me</a>
-                            <a class="link nav-link" href="#tech-skills">Skills</a>
-                            <a class="link nav-link" href="#projects">Projects</a>
-                            <a class="link nav-link" href="#contacts">Contacts</a>
-                        </div>
+<body class="bg-gray-800 text-gray-100 font-sans transition">
+
+    <!-- Header -->
+    <header class="p-6 flex flex-col md:flex-row justify-between items-center">
+        <a href="#">
+            <h1 class="text-2xl md:text-4xl font-light">AM<span class="text-green-500 font-bold">I</span>R</h1>
+        </a>
+        <nav class="space-x-2 md:space-x-6">
+            <a href="#about" class="hover:text-green-500">About</a>
+            <a href="#projects" class="hover:text-green-500">Projects</a>
+            <a href="#contact" class="hover:text-green-500">Contact</a>
+            <button
+                class="font-bold border border-green-500 rounded-xl p-1 md:p-2 hover:bg-green-500 hover:text-green-100">Resume</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="flex flex-col justify-center items-left md:mx-20 p-20">
+        <!-- <h4>Hi, my name is</h4> -->
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-6">Amir Sadik</h1>
+        <h2 class="text-1xl md:text-3xl lg:text-5xl">Software Engineer<sub
+                class="md:text-sm text-green-500 font-mono">Student</sub></h2>
+        <p class="md:text-2xl my-6 font-mono">A passionate Full-Stack Developer; eager to build clean, functional
+            websites and applications.</p>
+        <a href="#contact"
+            class="text-center w-32 p-3 mt-6 md:text-2xl font-bold border border-green-500 hover:bg-green-500 hover:text-green-100">Let's
+            talk</a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="p-20">
+        <h1 class="text-4xl md:text-6xl">About</h1>
+        <p class="text-green-500">___________________________________</p>
+        <p class="my-10 px-20 md:text-2xl">
+            Hello, I'm Amir, a Software Engineering student at <a class="text-gray-500 hover:text-green-500"
+                href="https://youtu.be/vU05DyZK_jI?si=ltGLs_GDWgFykadL" target="_blank">ALX</a>. I live in
+            Addis Ababa, <a class="text-gray-500 hover:text-green-500"
+                href="https://www.youtube.com/watch?v=t3BcaFNAifQ" target="_blank">Ethiopia</a>. I have a solid
+            foundational skills in programming languages like C
+            and Python, with hands-on experiences in front-end technologies such as HTML, CSS, and
+            JavaScript. I am passionate about coding
+            and
+            constantly learning new technologies to improve my problem solving skills. Take a look at my
+            portfolio
+            and feel free
+            to reach out if you'd like to collaborate. Looking forward to connecting with you!
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="p-20">
+        <h1 class="text-4xl md:text-6xl">Projects</h1>
+        <p class="text-green-500">___________________________________</p>
+        <div class="project-list my-10 flex flex-col md:flex-row justify-between gap-10">
+            <!---->
+            <div class="project-1 p-6 bg-gray-700 hover:-translate-y-2 transition">
+                <img src="img/portfolio-img.PNG" alt="" class="h-auto max-w-full">
+                <h2 class="my-6 text-2xl">Potfolio Website</h2>
+                <p>A portfolio website showcasing my passion and skills on application development. It is
+                    fully responsive and engaging.</p>
+                <div class="tech-stack mt-4 flex space-x-4">
+                    <div class="flex flex-col items-center">
+                        <img src="img/html.webp" alt="" class="w-[25px]">
+                        <p class="text-xs">HTML</p>
                     </div>
-                </div>
-            </nav>
-            <!-- Top content -->
-            <div class="top-content-wrapper">
-                <div class="top-content">
-                    <h1 class="display-1 mb-0">Amir Sadik</h1>
-                    <span class="d-flex align-items-end gap-2">
-                        <h4 class="fw-light">Softwere Engineer</h4>
-                        <small class="fs-6">Since 2024</small>
-                    </span>
-                    <p class="fw-light mt-5">I can write codes that humans can read and machines can execute</p>
-                    <p class="fw-light mt-5">Current Status : <span>Student</span></p>
-                </div>
-            </div>
-        </header>
-
-        <!-- About me -->
-        <div class="section" id="about-me">
-            <h4 class="display-6">About Me</h4>
-            <div class="about-text w-75 m-auto">
-                <p class="fw-light">
-                    Hello, World! My name is Amir Sadik, a Software Engineering student at <a class="link alx-link"
-                        href="https://youtu.be/vU05DyZK_jI?si=ltGLs_GDWgFykadL" target="_blank">ALX</a>. I live in
-                    Addis Ababa, <a class="link ethio-link" href="https://www.youtube.com/watch?v=t3BcaFNAifQ"
-                        target="_blank">Ethiopia</a>. I have a solid foundational skills in programming languages like C
-                    and Python, with hands-on experiences in front-end technologies such as HTML, CSS, and
-                    JavaScript. I am passionate about coding
-                    and
-                    constantly learning new technologies to improve my problem solving skills. Take a look at my
-                    portfolio
-                    and feel free
-                    to reach out if you'd like to collaborate. Looking forward to connecting with you!
-                </p>
-            </div>
-        </div> <!-- about -->
-
-        <!-- Skills -->
-        <div class="section skills" id="tech-skills">
-            <h4 class="display-6">Tech Skills</h4>
-            <div class="skills-list w-75 m-auto">
-                <div class="skill">
-                    <img src="img/c.webp" alt="">
-                    <span>C</span>
-                </div>
-                <div class="skill">
-                    <img src="img/python.webp" alt="">
-                    <span>Python</span>
-                </div>
-                <div class="skill">
-                    <img src="img/html.webp" alt="">
-                    <span>HTML</span>
-                </div>
-                <div class="skill">
-                    <img src="img/css.webp" alt="">
-                    <span>CSS</span>
-                </div>
-                <div class="skill">
-                    <img src="img/bootstrap.webp" alt="">
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill">
-                    <img src="img/javascript.webp" alt="">
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill">
-                    <img src="img/mysql.webp" alt="">
-                    <span>MySQL</span>
-                </div>
-                <div class="skill">
-                    <i class="fa-solid fa-terminal"></i>
-                    <span>Command line</span>
-                </div>
-                <div class="skill">
-                    <img src="img/git.webp" alt="">
-                    <span>Git</span>
-                </div>
-                <div class="skill">
-                    <img src="img/github.webp" alt="">
-                    <span>GitHub</span>
-                </div>
-                <div class="skill">
-                    <img src="img/vs-code.webp" alt="">
-                    <span>VS Code</span>
-                </div>
-                <div class="skill">
-                    <img src="img/chatgpt.webp" alt="">
-                    <span>ChatGPT</span>
-                </div>
-            </div>
-        </div> <!-- skills -->
-
-        <!-- Projects -->
-        <div class="section" id="projects">
-            <h4 class="display-6">Projects</h4>
-            <!-- Project 1 -->
-            <div class="project proj-1">
-                <div class="left-content">
-                    <div class="description">
-                        <h1>GETFLIX <span class="fs-4 fw-light">(NETFLIX Clone)</span></h1>
-                        <p>
-                            This project is a clone of the Netflix website. It replicates the user interface and key
-                            features of Netflix, including a modern
-                            homepage layout, interactive carousels, and smooth transitions. The project showcases my
-                            skills in frontend web development, design precision, and responsive layouts to deliver a
-                            seamless user experience across devices.
-                        </p>
+                    <div class="flex flex-col items-center">
+                        <img src="img/tailwind-css.png" alt="" class="w-[25px]">
+                        <p class="text-xs">Tailwind</p>
                     </div>
-                    <div class="techs-applied">
-                        <h3 class="mb-4">Techs Applied</h3>
-                        <div class="tech-list d-flex gap-5">
-                            <div class="tech tech-1">
-                                <img src="img/html.webp" alt="">
-                                <span>HTML</span>
-                            </div>
-                            <div class="tech tech-2">
-                                <img src="img/css.webp" alt="">
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech tech-1">
-                                <img src="img/javascript.webp" alt="">
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
+                </div> <!-- tech-stack -->
+                <div class="project-links mt-10 flex justify-center space-x-10">
+                    <a class="flex flex-col items-center" href="https://github.com/Amiir25/Getflix.git" target="_blank">
+                        <img src="img/github.webp" alt="" class="w-[25px]">
+                        <span>Code</span>
+                    <a class="flex flex-col items-center" href="https://amiir25.github.io/Getflix/" target="_blank">
+                        <img src="img/external-link.webp" alt="" class="w-[25px]">
+                        <span>Live Demo</span>
+                    </a>
+                </div> <!-- project-links -->
+            </div><!-- project-1 -->
+            <!---->
+            <div class="project-2 p-6 bg-gray-700 hover:-translate-y-2 transition">
+                <img src="img/netflix-img.PNG" alt="" class="h-auto max-w-full">
+                <h2 class="my-6 text-2xl">Netflix Clone</h2>
+                <p>A responsive clone of the Netflix home page. It replicates the user interface and key
+                    features of Netflix showcasing my skills in frontend web development, design precision, and
+                    responsive layouts.</p>
+                <div class="tech-stack mt-4 flex space-x-4">
+                    <div class="flex flex-col items-center">
+                        <img src="img/html.webp" alt="" class="w-[25px]">
+                        <p class="text-xs">HTML</p>
                     </div>
-                </div>
-                <div class="right-content">
-                    <video src="img/Getflix-demo.mp4" width="500px" height="400px" autoplay muted loop></video>
-                    <div class="link proj-links d-flex gap-5">
-                        <a class="link proj-link" href="https://github.com/Amiir25/Getflix.git" target="_blank">
-                            <img src="img/github.webp" alt="">
-                            <span>Code</span>
-                        </a>
-                        <a class="link proj-link" href="https://amiir25.github.io/Getflix/" target="_blank">
-                            <img src="img/external-link.webp" alt="">
-                            <span>Live Demo</span>
-                        </a>
+                    <div class="flex flex-col items-center">
+                        <img src="img/css.webp" alt="" class="w-[25px]">
+                        <p class="text-xs">CSS</p>
                     </div>
-                </div>
-            </div>
-        </div> <!-- projects -->
+                    <div class="flex flex-col items-center">
+                        <img src="img/javascript.webp" alt="" class="w-[25px]">
+                        <p class="text-xs">JavaScript</p>
+                    </div>
+                </div> <!-- tech-stack -->
+                <div class="project-links mt-10 flex justify-center space-x-10">
+                    <a class="flex flex-col items-center" href="https://github.com/Amiir25/Getflix.git" target="_blank">
+                        <img src="img/github.webp" alt="" class="w-[25px]">
+                        <span>Code</span>
+                    <a class="flex flex-col items-center" href="https://amiir25.github.io/Getflix/" target="_blank">
+                        <img src="img/external-link.webp" alt="" class="w-[25px]">
+                        <span>Live Demo</span>
+                    </a>
+                </div> <!-- project-links -->
+            </div> <!-- project-2 -->
+        </div> <!-- project-list -->
+    </section>
 
-        <!-- Contacts -->
-        <div class="section" id="contacts">
-            <h4 class="display-6">Contacts</h4>
-            <div class="contacts-wrapper">
-                <ul class="contacts-list">
-                    <li>
-                        <a href="mailto:your-email@example.com" class="link contact-link">
-                            <img src="img/contact-gmail.webp" alt="">
-                            <span>Email</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/amir-sadik-355190287" target="_blank"
-                            class="link contact-link">
-                            <img src="img/contact-linkedin.webp" alt="">
-                            <span>LinkedIN</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/amir_sadik" target="_blank" class="link contact-link">
-                            <img src="img/contact-telegram.webp" alt="">
-                            <span>Telegram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://web.whatsapp.com/" target="_blank" class="link contact-link">
-                            <img src="img/contact-whatsapp.webp" alt="">
-                            <span>WhatsApp</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/0xAmirSadik" target="_blank" class="link contact-link">
-                            <img src="img/contact-x.webp" alt="">
-                            <span>X</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Amiir25" target="_blank" class="link contact-link">
-                            <img src="img/contact-github.webp" alt="">
-                            <span>GitHub</span>
-                        </a>
-                    </li>
+    <!-- Contacts -->
+    <section id="contact" class="p-20">
+        <h1 class="text-4xl md:text-6xl">Contact</h1>
+        <p class="text-green-500">___________________________________</p>
+        <div class="contact-list my-10 px-20 flex space-x-6 justify-between">
+            <!-- Email -->
+            <a href="mailto:your-email@example.com" class="flex flex-col gap-2 items-center ">
+                <img src="img/contact-gmail.webp" alt="" class="w-[75px]">
+                <span class="hover:text-green-500">Email</span>
+            </a>
+            <!-- LinkedIN-->
+            <a href="linkedin.com/in/amir-sadik-20b2a9291" target="_blank" class="flex flex-col gap-2 items-center">
+                <img src="img/contact-linkedin.webp" alt="" class="w-[75px]">
+                <span class="hover:text-green-500">LinkedIN</span>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/amir_sadik" target="_blank" class="flex flex-col gap-2 items-center">
+                <img src="img/contact-telegram.webp" alt="" class="w-[75px]">
+                <span class="hover:text-green-500">Telegram</span>
+            </a>
+            <!-- Whatsapp -->
+            <a href="https://web.whatsapp.com/" target="_blank" class="flex flex-col gap-2 items-center">
+                <img src="img/contact-whatsapp.webp" alt="" class="w-[75px]">
+                <span class="hover:text-green-500">WhatsApp</span>
+            </a>
+            <!-- Twitter -->
+            <a href="https://x.com/0x0A_mir" target="_blank" class="flex flex-col gap-2 items-center">
+                <img src="img/contact-x.webp" alt="" class="w-[75px]">
+                <span class="hover:text-green-500">X</span>
+            </a>
+            <!-- Github -->
+            <a href="https://github.com/Amiir25" target="_blank" class="flex flex-col gap-2 items-center">
+                <img src="img/contact-github.webp" alt="" class="w-[75px]">
+                <span class="hover:text-green-500">GitHub</span>
+            </a>
+        </div> <!-- contact-list -->
+    </section>
 
-                </ul>
-            </div>
-        </div> <!-- contacts -->
-
-        <!-- Footer -->
-        <footer class="text-center mt-5">
-            <p>
-                &copy;2024 - 2025 <a href="" class="link amir-link">Amir Sadik</a>
-            </p>
-        </footer>
-
-
-
-        <!-- Bootsrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="text-center md:text-2xl">
+        <span class="font-light">2024 - 2025.</span> <a href="./index.html"
+            class="text-green-500 hover:text-gray-100">Amir Sadik</a>
+    </footer>
 </body>
-</div>
 
 </html>
