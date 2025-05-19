@@ -22,16 +22,16 @@
         </a>
 
         <!-- Navbar toggler -->
-        <p id="navbar-toggle" class="md:hidden text-2xl">
+        <p id="navbar-toggler" class="md:hidden text-2xl">
             <i class="fa-solid fa-bars"></i>
         </p>
 
         <!-- Navbar links -->
         <div id="navbar-links"
-            class="py-2 px-6  md:block absolute top-0 left-0 w-[100vw] h-[30vh] bg-gray-800">
+            class="py-2 px-6 md:block absolute top-0 left-0 transform -translate-y-full transition-all duration-200 w-[100vw] h-[30vh] bg-gray-800">
 
             <!-- Close icon -->
-            <p class="text-right text-2xl">
+            <p id="navbar-close" class="text-right text-2xl">
                 <i class="fa-regular fa-circle-xmark"></i>
             </p>
 
@@ -55,7 +55,7 @@
         <!-- <h4>Hi, my name is</h4> -->
         <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-6">Amir Sadik</h1>
         <h2 class="text-1xl md:text-3xl lg:text-5xl">Software Engineer
-            <!-- <sub class="md:text-sm text-green-500 font-mono">Student</sub></h2> -->
+            <small class="text-[0.6em] md:text-sm text-green-500 font-mono">Student</small></h2>
             <p class="md:text-2xl my-6 font-mono">A passionate Full-Stack Developer; eager to build clean, functional
                 websites and applications.</p>
             <a href="#contact"
@@ -236,6 +236,9 @@
         &copy; <span class="font-light">2024 - 2025.</span> <a href="./index.html"
             class="text-green-500 hover:text-gray-100">Amir Sadik</a>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
