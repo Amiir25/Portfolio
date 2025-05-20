@@ -67,8 +67,7 @@
             websites and applications.</p>
 
         <!-- Tech stack -->
-        <div id="tech-stack"
-            class="w-full h-[50vh] flex flex-col md:flex-row items-center justify-around">
+        <div id="tech-stack" class="w-full h-[50vh] flex flex-col md:flex-row items-center justify-between md:mt-10">
             <div id="tech-stack-images" class="relative w-80 h-56">
                 <img src="./img/html.webp" alt="" class="w-8 absolute top-1 left-20">
                 <img src="./img/css.webp" alt="" class="w-8 absolute top-16 left-10">
@@ -82,8 +81,8 @@
             </div>
 
             <!-- My resume button -->
-            <a href="#contact"
-                class="text-center w-32 md:w-40 p-3 mt-6 md:text-2xl font-bold border border-green-500 hover:bg-green-500 hover:text-green-100">
+            <a href="#contact" class="text-center w-32 md:w-40 p-3 mt-6 md:text-2xl font-bold border border-green-500
+                hover:bg-green-600 hover:text-green-100 md:mr-20">
                 My Resume
             </a>
         </div>
@@ -93,34 +92,63 @@
     <section id="about" class="p-6 md:p-20">
         <h1 class="text-4xl md:text-6xl">About</h1>
         <p class="text-green-500">___________________________________</p>
-        <p class="my-10 md:px-20 md:text-2xl">
-            Hello, I'm Amir, a self-taught Software Engineering student. I live in
-            Addis Ababa, <a class="text-gray-500 hover:text-green-500"
-                href="https://www.youtube.com/watch?v=t3BcaFNAifQ" target="_blank">Ethiopia</a>. I have a solid
-            foundational skills in programming languages like C
-            and Python, with hands-on experiences in front-end technologies such as HTML, CSS, and
-            JavaScript. I am passionate about coding
-            and
-            constantly learning new technologies to improve my problem solving skills. Take a look at my
-            portfolio
-            and feel free
-            to reach out if you'd like to collaborate. Looking forward to connecting with you!
-        </p>
+        <div class="my-10 md:px-20 md:text-2xl">
+            <p>
+                Hello, I'm Amir, a Software Engineering student. I live in
+                Addis Ababa,
+                <a class="text-gray-500 hover:text-green-500" href="https://www.youtube.com/watch?v=t3BcaFNAifQ"
+                    target="_blank">
+                    Ethiopia
+                </a>. I have a solid
+                foundational skills in programming languages like C
+                and Python, with hands-on experiences in front-end technologies such as HTML, CSS, and
+                JavaScript.
+            </p>
+            <br>
+            <p>
+                I am passionate about coding and constantly learning new technologies to improve my problem solving
+                skills. Take a look at my
+                portfolio and feel free to reach out if you'd like to collaborate. Looking forward to connecting with
+                you!
+            </p>
+        </div>
     </section>
 
     <!-- Projects -->
     <section id="projects" class="p-6 md:p-20">
         <h1 class="text-4xl md:text-6xl">Projects</h1>
         <p class="text-green-500">___________________________________</p>
-        <div class="project-list my-10 flex flex-col md:flex-row justify-between gap-10">
+        <div class="project-list my-10 flex flex-col md:flex-row justify-between flex-wrap">
 
-            <!-- Project 1 -->
+            <div id="project" class="max-w-sm md:max-w-xl bg-black pb-4 hover:-translate-y-2 transition">
+                <img id="project-image" src="" alt="" class="w-full">
+                <div class="mt-4 px-4">
+                    <h2 id="project-title" class="my-6 text-2xl"></h2>
+                    <p id="project-description"></p>
+                    <!-- Tech Stack -->
+                    <div id="tech-stack" class="mt-4 flex space-x-4 border h-32 text-white"></div>
+                    <!-- Project Links-->
+                    <div id="project-links " class="mt-10 flex justify-center space-x-10">
+                        <a id="github-link" class="flex flex-col items-center hover:text-green-500" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a id="live-link" class="flex flex-col items-center hover:text-green-500" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            <span>Live Demo</span>
+                        </a>
+                    </div> <!-- project-links -->
+                </div>
+            </div>
+
+            <!-- Project 1
             <div class="project-1 p-6 bg-gray-700 hover:-translate-y-2 transition">
                 <img src="img/portfolio-img.PNG" alt="" class="h-auto max-w-full">
                 <h2 class="my-6 text-2xl">Potfolio Website</h2>
                 <p>A portfolio website showcasing my passion and skills on application development. It is
-                    fully responsive and engaging.</p>
-                <!-- Tech Stack -->
+                    fully responsive and engaging.
+                </p>
+                Tech Stack
                 <div class="tech-stack mt-4 flex space-x-4">
                     <div class="flex flex-col items-center">
                         <img src="img/html.webp" alt="" class="w-[25px]">
@@ -130,8 +158,8 @@
                         <img src="img/tailwind-css.png" alt="" class="w-[25px]">
                         <p class="text-xs">Tailwind</p>
                     </div>
-                </div> <!-- tech-stack -->
-                <!-- Project Links-->
+                </div>  tech-stack
+                Project Links
                 <div class="project-links mt-10 flex justify-center space-x-10">
                     <a class="flex flex-col items-center hover:text-green-500"
                         href="https://github.com/Amiir25/Portfolio.git" target="_blank">
@@ -142,17 +170,17 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             <span>Live Demo</span>
                         </a>
-                </div> <!-- project-links -->
-            </div><!-- project-1 -->
+                </div> 
+            </div>
 
-            <!-- Project 2 -->
+            
             <div class="project-2 p-6 bg-gray-700 hover:-translate-y-2 transition">
                 <img src="img/app-works.PNG" alt="" class="h-auto max-w-full">
                 <h2 class="my-6 text-2xl">AppWorks</h2>
                 <p>A single landing page built in Mobile-First approach for AppWorks, a fictional tech company dedicated
                     to offer various technology
                     solutions for businesses and companies.</p>
-                <!-- Tech Stack-->
+                
                 <div class="tech-stack mt-4 flex space-x-4">
                     <div class="flex flex-col items-center">
                         <img src="img/html.webp" alt="" class="w-[25px]">
@@ -166,8 +194,8 @@
                         <img src="img/javascript.webp" alt="" class="w-[25px]">
                         <p class="text-xs">JavaScript</p>
                     </div>
-                </div> <!-- tech-stack -->
-                <!-- Project Links-->
+                </div> 
+                
                 <div class="project-links mt-10 flex justify-center space-x-10">
                     <a class="flex flex-col items-center hover:text-green-500"
                         href="https://github.com/Amiir25/AppWorks.git" target="_blank">
@@ -178,17 +206,17 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             <span>Live Demo</span>
                         </a>
-                </div> <!-- project-links -->
-            </div><!-- project-2 -->
+                </div> 
+            </div>
 
-            <!-- Project - 3-->
+            
             <div class="project-2 p-6 bg-gray-700 hover:-translate-y-2 transition">
                 <img src="img/netflix-img.PNG" alt="" class="h-auto max-w-full">
                 <h2 class="my-6 text-2xl">Netflix Clone</h2>
                 <p>A responsive clone of the Netflix home page. It replicates the user interface and key
                     features of Netflix showcasing my skills in frontend web development, design precision, and
                     responsive layouts.</p>
-                <!-- Tech Stack-->
+
                 <div class="tech-stack mt-4 flex space-x-4">
                     <div class="flex flex-col items-center">
                         <img src="img/html.webp" alt="" class="w-[25px]">
@@ -202,8 +230,8 @@
                         <img src="img/javascript.webp" alt="" class="w-[25px]">
                         <p class="text-xs">JavaScript</p>
                     </div>
-                </div> <!-- tech-stack -->
-                <!-- Project Links-->
+                </div> 
+                
                 <div class="project-links mt-10 flex justify-center space-x-10">
                     <a class="flex flex-col items-center hover:text-green-500"
                         href="https://github.com/Amiir25/Netflix_Clone.git" target="_blank">
@@ -214,9 +242,9 @@
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             <span>Live Demo</span>
                         </a>
-                </div> <!-- project-links -->
-            </div> <!-- project-2 -->
-        </div> <!-- project-list -->
+                </div> 
+            </div>  -->
+        </div> 
     </section>
 
     <!-- Contacts -->
@@ -264,6 +292,7 @@
     </footer>
 
 
+    <script src="projects.js"></script>
     <script src="script.js"></script>
 </body>
 
