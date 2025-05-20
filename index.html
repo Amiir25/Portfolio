@@ -57,17 +57,36 @@
     </header>
 
     <!-- Hero -->
-    <section class="flex flex-col justify-center items-left md:mx-20 p-6 md:p-20">
-        <!-- <h4>Hi, my name is</h4> -->
-        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-6">Amir Sadik</h1>
-        <h2 class="text-1xl md:text-3xl lg:text-5xl">Software Engineer
+    <section class="h-[80vh] flex flex-col items-center md:items-left md:mx-20 p-6 md:p-10">
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mt-6">Amir Sadik</h1>
+        <h2 class="md:text-3xl lg:text-5xl">Software Engineer
             <small class="text-[0.6em] md:text-sm text-green-500 font-mono">Student</small>
         </h2>
-        <p class="md:text-2xl my-6 font-mono">A passionate Full-Stack Developer; eager to build clean, functional
+        <p class="md:text-2xl text-center w-screen p-6 font-mono">A passionate Full-Stack Developer; eager to build
+            clean, functional
             websites and applications.</p>
-        <a href="#contact"
-            class="text-center w-32 p-3 mt-6 md:text-2xl font-bold border border-green-500 hover:bg-green-500 hover:text-green-100">Let's
-            talk</a>
+
+        <!-- Tech stack -->
+        <div id="tech-stack"
+            class="w-full h-[50vh] flex flex-col md:flex-row items-center justify-around">
+            <div id="tech-stack-images" class="relative w-80 h-56">
+                <img src="./img/html.webp" alt="" class="w-8 absolute top-1 left-20">
+                <img src="./img/css.webp" alt="" class="w-8 absolute top-16 left-10">
+                <img src="./img/javascript.webp" alt="" class="w-8 absolute top-16 left-28">
+                <img src="./img/tailwind-css.png" alt="" class="w-8 absolute top-32 left-20">
+                <img src="./img/bootstrap.webp" alt="" class="w-8 absolute top-4 left-40">
+                <img src="./img/c.webp" alt="" class="w-8 absolute top-24 left-44">
+                <img src="./img/python.webp" alt="" class="w-8 absolute top-12 left-56">
+                <img src="./img/git.webp" alt="" class="w-8 absolute top-36 left-56">
+                <img src="./img/chat-gpt.webp" alt="" class="w-8 absolute top-36 left-36">
+            </div>
+
+            <!-- My resume button -->
+            <a href="#contact"
+                class="text-center w-32 md:w-40 p-3 mt-6 md:text-2xl font-bold border border-green-500 hover:bg-green-500 hover:text-green-100">
+                My Resume
+            </a>
+        </div>
     </section>
 
     <!-- About -->
