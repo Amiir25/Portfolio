@@ -19,26 +19,53 @@ document.querySelectorAll('.short-nav-link').forEach((shortLink) => {
 
 // Projects
 const renderProjects = () => {
+    const projectList = document.querySelector('#project-list');
+
     projects.forEach(project => {
-        // Project image
-        document.querySelector('#project-image').setAttribute('src', `${project.image}`);
-        // Project title
-        document.querySelector('#project-title').textContent = project.title;
-        // Project description
-        document.querySelector('#project-description').textContent = project.description;
+        const projectItem = document.createElement('div');
+        projectItem.setAttribute('id', 'project');
+        projectItem.setAttribute('class', 'max-w-sm md:max-w-xl bg-black pb-4 hover:-translate-y-2 transition');
 
-        // Loop throught tech stacks
-        for (let i = 0; i < project.tech.length; i++) {
-            document.querySelector('#tech-stack').innerHTML += `
-                <img src="${project.tech[i]}" alt="${project.title}" class="w-[25px]">
-            `
+        // Loop thorugh tools
+        let tools = '';
+        for (let i = 0; i < project.tools.length; i++) {
+            tools += `<img src="${project.tools[i]}" alt="${project.title}" class="w-5">`
         }
-        alert(document.querySelector('#tech-stack').innerHTML);
 
+        projectItem.innerHTML = `
+            <img id="project-image" src="${project.image}" alt="${project.title}" class="w-full">
+            <div class="mt-4 px-4">
+                <h2 id="project-title" class="my-6 text-2xl font-semibold">${project.title}</h2>
+                
+                <p id="project-description">${project.description}</p>
 
-        // Github Link
-        document.querySelector('#github-link').setAttribute('href', `${project.github} `);
-        document.querySelector('#live-link').setAttribute('href', `${project.live} `);
+                <div id="tools" class="my-6 flex space-x-4">${tools}</div>
+
+                <div id="project-links " class="mt-10 flex justify-center space-x-10">
+                    <a id="github-link" class="flex flex-col items-center hover:text-green-500" target="_blank
+                    href="${project.github}">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Code</span>
+                    </a>
+                    <a id="live-link" class="flex flex-col items-center hover:text-green-500" target="_blank
+                    href="${project.demo}">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        <span>Demo</span>
+                    </a>
+                </div>
+            </div>
+        `;
+
+        projectList.appendChild(projectItem);
     })
 }
 renderProjects();
+
+// Contacts
+const renderContacts = () => {
+    const contactList = document.querySelector('#contact-list');
+
+    contacts.forEach(contact => {
+        
+    })
+}
