@@ -37,7 +37,7 @@ const renderSkills = () => {
     skillsList.setAttribute('class', 'grid grid-cols-4 gap-4 w-80 m-auto mt-6');
 
     for (let i = 0; i < skills.length; i++) {
-        skillsList.innerHTML += `<img src="${skills[i]}" alt="" class="w-8">`;
+        skillsList.innerHTML += `<img src="${skills[i]}" alt="" class="w-6">`;
     }
 
     document.querySelector('#skills').appendChild(skillsList);
@@ -53,7 +53,7 @@ const renderProjects = () => {
         projectItem.setAttribute('id', 'project');
         projectItem.setAttribute(
             'class',
-            'flex flex-col md:flex-row items-center space-x-4 w-[100%] mb-20'
+            'flex flex-col lg:flex-row items-center space-x-4 w-[100%] mb-20'
         );
 
         // Loop thorugh tools
@@ -102,8 +102,8 @@ const renderContacts = () => {
         contactItem.setAttribute('class', 'flex flex-col gap-2 items-center');
         contactItem.setAttribute('href', `${contact.link}`);
         contactItem.innerHTML = `
-            <img src="${contact.image}" alt="${contact.name}" class="w-[25px] md:w-[50px]">
-            <span class="hover:text-green-500 text-[10px] md:text-[16px]">${contact.name}</span>
+            <img src="${contact.image}" alt="${contact.name}" class="w-[25px] md:w-[25px]">
+            <span class="hover:text-green-500 text-xs">${contact.name}</span>
         `;
 
         contactList.appendChild(contactItem);
