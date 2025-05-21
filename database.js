@@ -70,12 +70,12 @@ const projects = [
 
 // Contacts
 const contacts = [
-    {
-        "id": 1,
-        "name": "Email",
-        "image": "./img/contacts/contact-gmail.webp",
-        "link": "mailto:amirsadik636@gmail.com"
-    },
+    // {
+    //     "id": 1,
+    //     "name": "Email",
+    //     "image": "./img/contacts/contact-gmail.webp",
+    //     "link": "mailto:amirsadik636@gmail.com"
+    // },
     {
         "id": 2,
         "name": "LinkedIn",
