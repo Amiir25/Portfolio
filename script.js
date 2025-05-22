@@ -6,11 +6,11 @@ darkMode.addEventListener('click', () => {
     // const bgDark = document.body.classList.toggle('bg-gray-900');
     // const textLight = document.body.classList.toggle('text-gray-100');
 
-    if (bgDark && textLight) {
+    // if (bgDark && textLight) {
         darkMode.classList.replace('fa-moon', 'fa-sun');
-    } else {
+    // } else {
         darkMode.classList.replace('fa-sun', 'fa-moon');
-    }
+    // }
 })
 
 // Navbar toggler
