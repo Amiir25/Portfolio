@@ -1,17 +1,17 @@
 // Script for Portfolio website
 
 // Dark mode
-let darkMode = document.querySelector('#dark-mode');
-darkMode.addEventListener('click', () => {
-    const bgDark = document.body.classList.toggle('bg-gray-900');
-    const textLight = document.body.classList.toggle('text-gray-100');
+// let darkMode = document.querySelector('#dark-mode');
+// darkMode.addEventListener('click', () => {
+//     const bgDark = document.body.classList.toggle('bg-gray-900');
+//     const textLight = document.body.classList.toggle('text-gray-100');
 
-    if (bgDark && textLight) {
-        darkMode.classList.replace('fa-moon', 'fa-sun');
-    } else {
-        darkMode.classList.replace('fa-sun', 'fa-moon');
-    }
-})
+//     if (bgDark && textLight) {
+//         darkMode.classList.replace('fa-moon', 'fa-sun');
+//     } else {
+//         darkMode.classList.replace('fa-sun', 'fa-moon');
+//     }
+// })
 
 // Navbar toggler
 document.querySelector('#navbar-toggler').addEventListener('click', () => {
