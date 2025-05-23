@@ -30,7 +30,7 @@ const projects = [
         "desktopimage": "./img/projects/app-works-desktop.webp",
         "mobileimage": "./img/projects/app-works-mobile.webp",
         "title": "AppWorks",
-        "description": "AppWorks is a tech company offering various technology solutions for businesses and companies. This is a single landing page for AppWorks, featuring hero messaging, service overview, client tetimonials and more.",
+        "description": "A clean, single-page landing site for AppWorks — a tech company providing business-focused technology solutions. Highlights include a hero message, service overview, client testimonials, and more.",
         "tools": [
             "./img/tools/html.webp",
             "./img/tools/css.webp",
@@ -44,7 +44,7 @@ const projects = [
         "desktopimage": "./img/projects/eventER-desktop.webp",
         "mobileimage": "./img/projects/eventER-mobile.webp",
         "title": "eventER",
-        "description": "A dynamic, fully responsive event booking site allowing users to book from a hetrogeneous list of events. Event details and a strong form validation features are included.",
+        "description": "A dynamic, fully responsive event booking site that lets users explore and book from a diverse range of events. Includes interactive event details and strong form validation features.",
         "tools": [
             "./img/tools/css.webp",
             "./img/tools/tailwind-css.png",
