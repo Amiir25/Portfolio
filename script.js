@@ -1,5 +1,7 @@
 // Script for Portfolio website
 
+const hiddenNavbar = document.querySelector('#hidden-navbar'); // Hidden navbar for small screen
+
 // Dark mode
 let darkMode = document.querySelector('#dark-mode');
 darkMode.addEventListener('click', () => {
@@ -11,22 +13,26 @@ darkMode.addEventListener('click', () => {
     } else {
         darkMode.classList.replace('fa-sun', 'fa-moon');
     }
+
+    // Dark mode for the hidden navbar
+    hiddenNavbar.classList.toggle('bg-gray-900');
+    hiddenNavbar.classList.toggle('text-gray-100');
 })
 
 // Navbar toggler
 document.querySelector('#navbar-toggler').addEventListener('click', () => {
-    document.querySelector('#navbar-small').classList.add('-translate-y-0');
+    hiddenNavbar.classList.add('-translate-y-0');
 })
 
 // Close the navbar on X
 document.querySelector('#navbar-close').addEventListener('click', () => {
-    document.querySelector('#navbar-small').classList.remove('-translate-y-0');
+    hiddenNavbar.classList.remove('-translate-y-0');
 })
 
 // Close the navbar when a link is clicked
 document.querySelectorAll('.short-nav-link').forEach((shortLink) => {
     shortLink.addEventListener('click', () => {
-        document.querySelector('#navbar-small').classList.remove('-translate-y-0');
+        hiddenNavbar.classList.remove('-translate-y-0');
     })
 })
 
