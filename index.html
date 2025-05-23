@@ -13,8 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="bg-gray-100 text-gray-900 transition-all duration-300">
-    <!-- dark:bg-gray-900 dark:text-gray-100 -->
+<body class="bg-gray-100 text-gray-900 transition-all duration-200">
 
     <!-- Header -->
     <header class="px-6 py-2 flex items-center justify-between md:justify-around border-b border-green-500 relative">
@@ -48,8 +47,8 @@
                 </p>
 
                 <!-- Hidden Navbar -->
-                <div id="navbar-small"
-                    class="py-2 px-6 absolute top-0 left-0 transform -translate-y-full transition-all duration-200 w-[100vw] h-[30vh] bg-white text-gray-800">
+                <div id="hidden-navbar" class="py-2 px-6 absolute top-0 left-0 transform -translate-y-full transition-all duration-200
+                    w-[100vw] h-[30vh] bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
 
                     <!-- Close icon -->
                     <p id="navbar-close" class="text-right text-2xl">
@@ -57,8 +56,9 @@
                     </p>
 
                     <!-- Nav -->
-                    <nav class="text-2xl flex flex-col md:flex-row items-center justify-center space-y-3 md:space-x-4">
+                    <nav class="text-sm flex flex-col md:flex-row items-center justify-center space-y-3 md:space-x-4">
                         <a href="#about" class="short-nav-link">About</a>
+                        <a href="#skills" class="short-nav-link">Skills</a>
                         <a href="#projects" class="short-nav-link">Projects</a>
                         <a href="#contact" class="short-nav-link">Contact</a>
                 </div>
@@ -73,11 +73,17 @@
             <small class="text-[0.6em] md:text-sm text-green-500 font-mono">Student</small>
         </h2>
         <p class="md:text-2xl text-center p-8 lg:mx-56 font-mono">
-            A passionate Full-Stack Developer; eager to build clean, functional websites and applications.
+            A passionate Web Developer based in Addis Ababa,
+            <a class="text-gray-500 hover:text-green-500" href="https://www.youtube.com/watch?v=t3BcaFNAifQ"
+                target="_blank">
+                Ethiopia
+            </a>;
+            eager to build clean + functional web applications.
         </p>
 
         <!-- My resume button -->
-        <a href="#contact" class="text-center w-32 md:w-40 p-3 mt-6 md:text-2xl font-bold border border-green-500
+        <a href="https://www.canva.com/design/DAGoPol9X1w/8z_Z7vsyj24woU_fKjYBCw/view?utm_content=DAGoPol9X1w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfb4461df6a" target="_blank"
+            class="text-center w-32 md:w-40 p-3 mt-6 md:text-2xl font-bold border border-green-500
                 hover:bg-green-600 hover:text-green-100 md:mr-20">
             My Resume
         </a>
@@ -87,27 +93,24 @@
     <section id="about" class="p-8 md:mx-56">
         <h1 class="font-semibold text-2xl md:text-4xl">About</h1>
         <p class="text-green-500">___________________________________</p>
-        <div class="my-10 lg:px-20 text-md">
-            <p>
-                Hello, I'm Amir, a Software Engineering student. I live in
-                Addis Ababa,
-                <a class="text-gray-500 hover:text-green-500" href="https://www.youtube.com/watch?v=t3BcaFNAifQ"
-                    target="_blank">
-                    Ethiopia
-                </a>.
-                I have a solid foundational skills in programming languages like C and Python, with hands-on experiences
-                in front-end technologies such as HTML, CSS, and JavaScript.
+        <div class="my-10 lg:px-20 md:flex gap-20">
+            <p class="text-sm md:text-md">
+                Hello, I'm Amir, a self taught Web Developer. I have a strong foundation in programming
+                languages like C and Python, experienced in building modern websites using core web technologies
+                including HTML, CSS, and JavaScript. I have also practical skill in creating clean and maintainable
+                websites using popular CSS frameworks like Tailwind CSS and Bootstrap.
             </p>
             <br>
-            <p>
-                I am passionate about coding and constantly learning new technologies to improve my problem solving
-                skills. Take a look at my portfolio and feel free to reach out if you'd like to collaborate. Looking
+            <p class="text-sm md:text-md">
+                I am passionate about coding and constantly learning frontend frameworks and backend technologies to
+                improve my web development skill. It is my pleasure to deliver reliable and efficient code. Take a look
+                at my portfolio and feel free to reach out if you'd like to collaborate. Looking
                 forward to connecting with you!
             </p>
         </div>
     </section>
 
-        <!-- Skills -->
+    <!-- Skills -->
     <section id="skills" class="p-8 md:mx-56">
         <h1 class="font-semibold text-2xl md:text-4xl">Skills</h1>
         <p class="text-green-500">___________________________________</p>
@@ -133,10 +136,10 @@
                 <span class="ml-2">+251 944 081 246</span>
             </p>
             <!-- Email -->
-             <p>
+            <p>
                 <i class="fa-solid fa-envelope"></i>
                 <span class="ml-2">amirsadik636@gmail.com</span>
-             </p>
+            </p>
         </div>
         <div id="contact-list" class="my-10 md:px-20 flex flex-wrap justify-around items-center"></div>
     </section>
