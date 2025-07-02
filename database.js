@@ -37,7 +37,7 @@ const projects = [
             "./img/tools/javascript.webp"
         ],
         "github": "https://github.com/Amiir25/AppWorks.git",
-        "demo": "app-works.netlify.app"
+        "demo": "https://app-works.netlify.app"
     },
     {
         "id": 3,
@@ -51,7 +51,7 @@ const projects = [
             "./img/tools/javascript.webp"
         ],
         "github": "https://github.com/Amiir25/eventER.git",
-        "demo": "event-er.netlify.app"
+        "demo": "https://event-er.netlify.app"
     },
     // {
     //     "id": 4,
