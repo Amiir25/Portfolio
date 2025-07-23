@@ -8,7 +8,11 @@ const skills = [
     "./img/tools/c.webp",
     "./img/tools/python.webp",
     "./img/tools/git.webp",
-    "./img/tools/chat-gpt.webp"
+    "./img/tools/react.png",
+    "./img/tools/node.png",
+    "./img/tools/express.png",
+    "./img/tools/mysql.webp",
+    "./img/tools/mongodb.png",
 ];
 
 // Projects
@@ -66,6 +70,23 @@ const projects = [
     //     "github": "https://github.com/Amiir25/Netflix_Clone.git",
     //     "demo": "https://amiir25.github.io/Netflix_Clone/"
     // },
+
+    {
+        "id": 5,
+        "desktopimage": "./img/projects/book-tracker.PNG",
+        "mobileimage": "",
+        "title": "BookTracker",
+        "description": "A simple full-stack web application that saves and tracks books in different stages from start to finish.",
+        "tools": [
+            "./img/tools/tailwind-css.png",
+            "./img/tools/react.png",
+            "./img/tools/node.png",
+            "./img/tools/express.png",
+            "./img/tools/mysql.webp"
+        ],
+        "github": "https://github.com/Amiir25/BookTracker.git",
+        "demo": "https://youtu.be/6fhf1qIVYSw"
+    },
 ];
 
 // Contacts
