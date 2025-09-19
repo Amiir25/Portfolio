@@ -11,7 +11,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div>
             <div className='flex items-center justify-between py-2'>
                 {/* Logo */}
-                <img src="/A-logo.png" alt="" className='w-14 md:w-28' />
+                <img src="/A-logo.png" alt="" className='w-14 md:w-24 lg:w-32' />
 
                 <div className='flex items-center gap-8'>
                     {/* Dark/light mode icon */}
@@ -36,7 +36,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
 
             {/* Small Screen */}
-            <div className={`absolute md:hidden bg-white text-black top-0 -left-100 w-screen h-screen
+            <div className={`absolute md:hidden top-0 -left-1000 w-screen h-screen z-10
+            ${ darkMode ? 'bg-slate-900 text-gray-50' : 'bg-gray-50 text-slate-900' }
             ${ smallScreen && 'left-0' } transition-all duration-300`}>
                 {/* Close icon */}
                 <div onClick={ () => setSmallScreen(false) } className='text-right text-2xl p-6'>
