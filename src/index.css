@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+svg path {
+    stroke: black;
+    /* stroke-width: 10px; */
+    /* fill: none; */
+}
