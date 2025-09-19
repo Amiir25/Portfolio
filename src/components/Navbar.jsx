@@ -1,31 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { } from '@fortawesome/free-regular-svg-icons';
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun, faMoon, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({ darkMode, setDarkMode }) => {
-  return (
-    <div className='flex items-center justify-between py-2'>
-        {/* Logo */}
-        <img src="/A-logo.png" alt="" className='w-20 md:w-28' />
 
-        <div className='flex items-center gap-8'>
-            {/* Dark/light mode icon */}
-            <FontAwesomeIcon icon={ darkMode ? faSun : faMoon }
-            onClick={ () => setDarkMode(!darkMode) }
-            className='md:text-xl cursor-pointer' />
+    const [smallScreen, setSmallScreen] = useState(false);
 
-            {/* Nav links */}
-            <div className='flex gap-4 md:text-lg'>
-                <a href="#" className='hover:text-indigo-200 active:text-white'>About</a>
-                <a href="#" className='hover:text-indigo-200 active:text-white'>Skills</a>
-                <a href="#" className='hover:text-indigo-200 active:text-white'>Education</a>
-                <a href="#" className='hover:text-indigo-200 active:text-white'>Projects</a>
-                <a href="#" className='hover:text-indigo-200 active:text-white'>Contact</a>
+    return (
+        <div>
+            <div className='flex items-center justify-between py-2'>
+                {/* Logo */}
+                <img src="/A-logo.png" alt="" className='w-14 md:w-28' />
+
+                <div className='flex items-center gap-8'>
+                    {/* Dark/light mode icon */}
+                    <FontAwesomeIcon icon={ darkMode ? faSun : faMoon }
+                    onClick={ () => setDarkMode(!darkMode) }
+                    className='md:text-xl cursor-pointer' />
+
+                    {/* Humberger menu */}
+                    <div onClick={ () => setSmallScreen(true) } className='md:hidden cursor-pointer'>
+                        <FontAwesomeIcon icon={ faBars } />
+                    </div>
+
+                    {/* Nav links */}
+                    <div className='hidden md:flex gap-4 md:text-lg'>
+                        <a href="#" className='hover:text-indigo-200 active:text-white'>About</a>
+                        <a href="#" className='hover:text-indigo-200 active:text-white'>Skills</a>
+                        <a href="#" className='hover:text-indigo-200 active:text-white'>Education</a>
+                        <a href="#" className='hover:text-indigo-200 active:text-white'>Projects</a>
+                        <a href="#" className='hover:text-indigo-200 active:text-white'>Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            {/* Small Screen */}
+            <div className={`bg-white text-black absolute top-0 -left-100 w-screen h-screen
+            ${ smallScreen && 'left-0' } transition-all duration-300`}>
+                {/* Close icon */}
+                <div onClick={ () => setSmallScreen(false) } className='text-right text-2xl p-6'>
+                    <FontAwesomeIcon icon={ faClose } />
+                </div>
+                <div className='flex flex-col gap-4 w-fit mx-auto mt-20 text-2xl'>
+                    <a href="#" className='hover:text-indigo-200 active:text-white'>About</a>
+                    <a href="#" className='hover:text-indigo-200 active:text-white'>Skills</a>
+                    <a href="#" className='hover:text-indigo-200 active:text-white'>Education</a>
+                    <a href="#" className='hover:text-indigo-200 active:text-white'>Projects</a>
+                    <a href="#" className='hover:text-indigo-200 active:text-white'>Contact</a>
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Navbar
