@@ -8,7 +8,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     const [smallScreen, setSmallScreen] = useState(false);
 
     return (
-        <div>
+        <nav className='fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-24 xl:px-32'>
             <div className='flex items-center justify-between py-2'>
                 {/* Logo */}
                 <img src="/A-logo.png" alt="" className='w-14 md:w-24 lg:w-32' />
@@ -51,7 +51,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <a href="#" className='hover:text-indigo-200 active:text-white'>Contact</a>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 
