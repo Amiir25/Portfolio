@@ -5,27 +5,28 @@ import React from "react";
 
 const Hero = ({ darkMode }) => {
     return (
-        <div className="flex items-center mt-10">
+        <div className="h-screen flex mt-40 sm:mt-30 md:mt-20">
             <div>
                 <div className='text-center'>
-                    <h1 className='text-4xl md:text-8xl font-bold'>Amir Sadik</h1>
-                    <h2 className={`${ darkMode ? 'text-gray-300' : 'text-gray-700' } text-2xl md:text-5xl font-light`}>
+                    <h1 className='text-5xl sm:text-6xl md:text-8xl font-bold'>Amir Sadik</h1>
+                    <h2 className={`${ darkMode ? 'text-gray-300' : 'text-gray-700' } text-2xl sm:text-3xl md:text-5xl font-light`}>
                         Software Engineer <small className='text-xs md:text-sm text-green-600 font-mono'>Junior</small>
                     </h2>
-                    <p className='text-xl w-[65%] mx-auto my-10 font-mono'>
+                    <p className='text-sm sm:text-xl w-[90%] sm:w-[80%] md:w-[65%] mx-auto my-10 font-mono'>
                         A passionate Web Developer based in Addis Ababa, Ethiopia ; eager to build
                         clean + functional web applications.
                     </p>
                 </div>
 
                 {/* CTA Buttons */}
-                <div className={`flex items-center justify-center gap-10 text-lg md:text-xl my-4`}>
+                <div className={`flex items-center justify-center gap-6 md:gap-10 text-sm md:text-xl my-4`}>
                     
                     <button className='text-gray-50 bg-gradient-to-r from-indigo-800 to-blue-600 p-2 rounded cursor-pointer font-medium hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600'>
                         View My Work
                     </button>
+                    
                     <a href=""
-                    className={`border border-indigo-800 p-2 rounded cursor-pointer bg-gradient-to-r
+                    className={`border border-indigo-800 p-2 rounded cursor-pointer font-medium bg-gradient-to-r
                     hover:text-gray-50 ${ darkMode ? 'hover:border-slate-900' : 'hover:border-gray-50' }
                     hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600`}>
                         Check My Resume
@@ -33,7 +34,7 @@ const Hero = ({ darkMode }) => {
                 </div>
 
                 {/* Social Links */}
-                <div className='flex items-center justify-center gap-10 text-3xl mt-10'>
+                <div className='flex items-center justify-center gap-10 text-2xl sm:text-3xl mt-10'>
                     <a href="" className='hover:text-indigo-200'>
                         <FontAwesomeIcon icon={ faGithub } />
                     </a>
