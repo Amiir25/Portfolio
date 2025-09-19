@@ -5,7 +5,7 @@ import React from "react";
 
 const Hero = ({ darkMode }) => {
     return (
-        <div className="h-screen flex mt-40 sm:mt-30 md:mt-20">
+        <div className="mt-20">
             <div>
                 <div className='text-center'>
                     <h1 className='text-5xl sm:text-6xl md:text-8xl font-bold'>Amir Sadik</h1>
