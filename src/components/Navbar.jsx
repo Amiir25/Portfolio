@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
 
             {/* Small Screen */}
-            <div className={`bg-white text-black absolute top-0 -left-100 w-screen h-screen
+            <div className={`absolute md:hidden bg-white text-black top-0 -left-100 w-screen h-screen
             ${ smallScreen && 'left-0' } transition-all duration-300`}>
                 {/* Close icon */}
                 <div onClick={ () => setSmallScreen(false) } className='text-right text-2xl p-6'>
