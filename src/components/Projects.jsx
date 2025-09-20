@@ -11,7 +11,7 @@ const Projects = ({ darkMode }) => {
       <div className='flex flex-col gap-30'>
         {
             projects.map((project, i) => (
-                <div key={i} className='flex flex-col md:flex-row items-center gap-x-20 gap-y-8'>
+                <div key={i} className='flex flex-col md:flex-row items-center gap-x-40 gap-y-8'>
                     {/* Project Images */}
                     <div className='relative flex-1'>
                         <img src={ project.desktopImage } alt={ `${project.name} Desktop Image` }
@@ -22,8 +22,8 @@ const Projects = ({ darkMode }) => {
 
                     {/* Project Description */}
                     <div className='flex-1 flex flex-col items-center'>
-                        <h1 className='text-3xl font-medium mb-2'>{ project.name }</h1>
-                        <p className='text-sm tracking-wider'>{ project.description }</p>
+                        <h1 className='text-2xl font-medium mb-2'>{ project.name }</h1>
+                        <p className='text-xs tracking-wider'>{ project.description }</p>
                         <div className='flex items-center gap-4 my-8'>
                             {
                                 project.tech.map((tech, i) => (
@@ -33,12 +33,12 @@ const Projects = ({ darkMode }) => {
                         </div>
                         <div className='flex items-center gap-8'>
                             <a href="" className='flex flex-col items-center gap-1 hover:text-indigo-400'>
-                                <FontAwesomeIcon icon={ faGithub } className='text-xl' />
+                                <FontAwesomeIcon icon={ faGithub } className='text-lg' />
                                 <span className='text-xs'>Code</span>
                             </a>
                             <a href="" className='flex flex-col items-center gap-1 hover:text-indigo-400'>
-                                <FontAwesomeIcon icon={ faLink } className='text-xl' />
-                                <span className='text-xs'>Live Demo</span>
+                                <FontAwesomeIcon icon={ faLink } className='text-lg' />
+                                <span className='text-xs'>Demo</span>
                             </a>
                         </div>
                     </div>
