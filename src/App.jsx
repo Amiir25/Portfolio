@@ -10,7 +10,7 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div className={`relative px-12 md:px-24 lg:px-48 xl:px-60
+    <div className={`relative
     ${ darkMode ? 'bg-slate-950 text-gray-50' : 'bg-gray-50 text-slate-950' } transition-all duration-300`}>
 
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
