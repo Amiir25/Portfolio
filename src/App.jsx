@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Header darkMode={darkMode} setDarkMode={setDarkMode}/>
       <About darkMode={darkMode}/>
       <Skills darkMode={darkMode} />
+      <Projects darkMode={darkMode} />
 
     </div>
   )
