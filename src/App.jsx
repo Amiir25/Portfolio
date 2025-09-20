@@ -19,7 +19,7 @@ const App = () => {
       <Projects darkMode={darkMode} />
       <Contacts darkMode={darkMode} />
 
-      <p className='mt-20 text-center border-t border-slate-500 py-2'>
+      <p className='mx-12 md:mx-24 lg:mx-48 xl:mx-60 mt-20 text-center border-t border-slate-500 py-2'>
         &copy; 2024 - 2025. <a href="">Amir Sadik</a>
       </p>
 
