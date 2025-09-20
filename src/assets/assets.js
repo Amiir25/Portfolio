@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+
 // Import skills
 import C from './skills/c.webp';
 import Python from './skills/python.webp';
@@ -19,6 +22,8 @@ import appWorksDesktop from './projects/app-works-desktop.webp';
 import appWorksMobile from './projects/app-works-mobile.webp';
 import aplyzerDesktop from './projects/aplyzer-desktop.PNG';
 import aplyzerMobile from './projects/aplyzer-mobile.PNG';
+import { faDiscord, faLinkedin, faTelegram, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 // Export skills
 export const skills = [
@@ -93,7 +98,51 @@ export const projects = [
         name: 'Aplyzer',
         desktopImage: aplyzerDesktop,
         mobileImage: aplyzerMobile,
-        description: 'A full-stack web application that helps job seekers stay organized throughout their job hunt by adding new job applications and updating statuses. It showcases CRUD operations, form validation, and a responsive UI with smooth animations.',
+        description: 'A full-stack job application tracker website that helps job seekers stay organized throughout their job hunt by adding new job applications and updating statuses. It showcases CRUD operations, form validation, and a responsive UI with smooth animations.',
         tech: [TailwindCSS, React, Node, Express, MySQL] 
+    },
+];
+
+// Get In Touch
+// Let's Talk
+export const letsTalk = [
+    {
+        icon: faEnvelope,
+        name: 'Email',
+        value: 'amirsadik636@gmail.com',
+    },
+    {
+        icon: faPhone,
+        name: 'Phone',
+        value: '+251 944 081 246',
+    },
+    {
+        icon: faLocationDot,
+        name: 'Location',
+        value: 'Addis Ababa, Ethiopia',
+    },
+];
+
+// Lets Chat + Collaborate
+export const letsChat = [
+    {
+        icon: faLinkedin,
+        name: 'LinkedIn',
+    },
+    {
+        icon: faTelegram,
+        name: 'Telegram',
+    },
+    {
+        icon: faWhatsapp,
+        name: 'Whatapp'
+    },
+    {
+        icon: faXTwitter,
+        name: 'X'
+    },
+    {
+        icon: faDiscord,
+        name: 'Discord'
     },
 ];
