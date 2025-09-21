@@ -92,14 +92,18 @@ export const projects = [
         desktopImage: appWorksDesktop,
         mobileImage: appWorksMobile,
         description: 'A clean, single-page landing site for AppWorks — a tech company providing business-focused technology solutions. Highlights include a hero message, service overview, client testimonials, and more.',
-        tech: [HTML, CSS, JavaScript] 
+        tech: [HTML, CSS, JavaScript],
+        codeLink: 'https://github.com/Amiir25/AppWorks.git',
+        liveLink: 'https://app-works.netlify.app/',
     },
     {
         name: 'Aplyzer',
         desktopImage: aplyzerDesktop,
         mobileImage: aplyzerMobile,
         description: 'A full-stack job application tracker website that helps job seekers stay organized throughout their job hunt by adding new job applications and updating statuses. It showcases CRUD operations, form validation, and a responsive UI with smooth animations.',
-        tech: [TailwindCSS, React, Node, Express, MySQL] 
+        tech: [TailwindCSS, React, Node, Express, MySQL],
+        codeLink: 'https://github.com/Amiir25/Aplyzer.git',
+        liveLink: 'https://youtu.be/mr06eX3Et7k',
     },
 ];
 
@@ -128,21 +132,21 @@ export const letsChat = [
     {
         icon: faLinkedin,
         name: 'LinkedIn',
+        link: 'https://www.linkedin.com/in/amir-sadik-20b2a9291/',
     },
     {
         icon: faTelegram,
         name: 'Telegram',
+        link: 'https://t.me/amir_sadik',
     },
     {
         icon: faWhatsapp,
-        name: 'Whatapp'
+        name: 'Whatapp',
+        link: 'https://web.whatsapp.com/',
     },
     {
         icon: faXTwitter,
-        name: 'X'
-    },
-    {
-        icon: faDiscord,
-        name: 'Discord'
+        name: 'X',
+        link: 'https://x.com/0x0A_mir',
     },
 ];

@@ -32,11 +32,13 @@ const Projects = ({ darkMode }) => {
                             }
                         </div>
                         <div className='flex items-center gap-8'>
-                            <a href="" className='flex flex-col items-center gap-1 hover:text-indigo-400'>
+                            <a href={ project.codeLink } target='_blank'
+                            className='flex flex-col items-center gap-1 hover:text-indigo-400'>
                                 <FontAwesomeIcon icon={ faGithub } className='text-lg' />
                                 <span className='text-xs'>Code</span>
                             </a>
-                            <a href="" className='flex flex-col items-center gap-1 hover:text-indigo-400'>
+                            <a href={ project.liveLink } target='_blank'
+                            className='flex flex-col items-center gap-1 hover:text-indigo-400'>
                                 <FontAwesomeIcon icon={ faLink } className='text-lg' />
                                 <span className='text-xs'>Demo</span>
                             </a>

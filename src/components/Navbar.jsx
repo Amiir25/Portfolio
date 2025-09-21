@@ -33,7 +33,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     }
 
     return (
-        <nav className={`fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-24 xl:px-32
+        <nav className={`fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-24 xl:px-32 z-10
         ${ isScrolled ? (darkMode ? 'bg-slate-950/90 border-b-2 border-indigo-950' :
         'bg-slate-50/90 border-b-2 border-indigo-500') : 'bg-transparent' } transition-all duration-300`}>
             <div className='flex items-center justify-between py-2'>

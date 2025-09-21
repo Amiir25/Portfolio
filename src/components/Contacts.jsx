@@ -46,7 +46,7 @@ const Contacts = ({ darkMode }) => {
                 <h2 className='text-xl text-blue-700 font-medium tracking-wider mb-4'>
                     Let's collaborate.
                 </h2>
-                <a href="">
+                <a href="https://github.com/Amiir25">
                     <FontAwesomeIcon icon={ faGithub }
                     className='text-blue-500 text-2xl p-2 rounded-lg bg-blue-500/20
                     hover:bg-blue-500/30 active:bg-blue-500/20' />

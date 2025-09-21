@@ -4,6 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Hero = ({ darkMode }) => {
+
+    const scrollInToSection = (sectionId) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <div className="mt-20">
             <div>
@@ -21,11 +26,15 @@ const Hero = ({ darkMode }) => {
                 {/* CTA Buttons */}
                 <div className={`flex items-center justify-center gap-6 md:gap-10 text-sm md:text-xl my-4`}>
                     
-                    <button className='text-gray-50 bg-gradient-to-r from-indigo-800 to-blue-600 p-2 rounded cursor-pointer font-medium hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600'>
+                    <button
+                    onClick={ () => scrollInToSection('projects') }
+                    className='text-gray-50 bg-gradient-to-r from-indigo-800 to-blue-600 p-2 rounded cursor-pointer font-medium hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600'>
                         View My Work
                     </button>
                     
-                    <a href=""
+                    <a
+                    href="https://www.canva.com/design/DAGoPol9X1w/8z_Z7vsyj24woU_fKjYBCw/view?utm_content=DAGoPol9X1w&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hfb4461df6a" 
+                    target='_blank'
                     className={`border border-indigo-800 p-2 rounded cursor-pointer font-medium bg-gradient-to-r
                     hover:text-gray-50 ${ darkMode ? 'hover:border-slate-900' : 'hover:border-gray-50' }
                     hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600`}>
