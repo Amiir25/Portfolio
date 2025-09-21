@@ -6,7 +6,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const Projects = ({ darkMode }) => {
   return (
-    <div className='my-40'>
+    <div id='projects' className='px-12 md:px-24 lg:px-48 xl:px-60 pt-40'>
       <h1 className='text-4xl md:text-6xl text-indigo-400 text-center font-bold mb-20'>Featured Projects</h1>
       <div className='flex flex-col gap-30'>
         {
@@ -24,10 +24,10 @@ const Projects = ({ darkMode }) => {
                     <div className='flex-1 flex flex-col items-center'>
                         <h1 className='text-2xl font-medium mb-2'>{ project.name }</h1>
                         <p className='text-xs tracking-wider'>{ project.description }</p>
-                        <div className='flex items-center gap-4 my-8'>
+                        <div className='flex items-center gap-4 my-4'>
                             {
                                 project.tech.map((tech, i) => (
-                                    <img src={tech} alt="" key={i} className='w-5' />
+                                    <img src={tech} alt="" key={i} className='w-4' />
                                 ))
                             }
                         </div>
