@@ -27,4 +27,4 @@ This repository contains the code for my personal portfolio website:
 
 ## Live Demo
 
-[Visit My Portfolio](https://amirsadik-41y5bkz9c-amirs-projects-b7c245ed.vercel.app/)
+[Visit My Portfolio](amirsadik.vercel.app)
