@@ -34,7 +34,7 @@ const Hero = ({ darkMode }) => {
                 </div>
 
                 {/* Social Links */}
-                <div className='flex items-center justify-center gap-10 text-2xl sm:text-3xl mt-10'>
+                {/* <div className='flex items-center justify-center gap-10 text-2xl sm:text-3xl mt-10'>
                     <a href="" className='hover:text-indigo-200'>
                         <FontAwesomeIcon icon={ faGithub } />
                     </a>
@@ -44,12 +44,12 @@ const Hero = ({ darkMode }) => {
                     <a href="" className='hover:text-indigo-200'>
                         <FontAwesomeIcon icon={ faEnvelope } />
                     </a>
-                </div>
+                </div> */}
 
                 {/* Down arrow */}
-                <div className='text-center text-3xl text-blue-400 animate-pulse mt-6 py-2'>
+                {/* <div className='text-center text-3xl text-blue-400 animate-pulse mt-6 py-2'>
                     <FontAwesomeIcon icon={ faArrowDown } />
-                </div>
+                </div> */}
             </div>
         </div>
     )
