@@ -5,7 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 
 const Contacts = ({ darkMode }) => {
   return (
-    <div>
+    <div id='contact' className='px-12 md:px-24 lg:px-48 xl:px-60 pt-40'>
       <h1 className='text-4xl md:text-6xl text-indigo-400 text-center font-bold mb-20'>Get In Touch</h1>
 
       <div className='flex flex-col md:flex-row items-start justify-center gap-x-20 gap-y-8'>
