@@ -23,7 +23,7 @@ This repository contains the code for my personal portfolio website:
 
 **Frontend**: React, Tailwind CSS
 **Version Control**: Git & GitHub
-**Deployment**: Netlify
+**Deployment**: Vercel
 
 ## Live Demo
 
