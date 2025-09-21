@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { } from '@fortawesome/free-regular-svg-icons';
 import { faSun, faMoon, faBars, faClose } from '@fortawesome/free-solid-svg-icons';
@@ -6,12 +6,24 @@ import { faSun, faMoon, faBars, faClose } from '@fortawesome/free-solid-svg-icon
 const Navbar = ({ darkMode, setDarkMode }) => {
 
     const [smallScreen, setSmallScreen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <nav className='fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-24 xl:px-32'>
+        <nav className={`fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-24 xl:px-32
+        ${ isScrolled ? (darkMode ? 'bg-slate-950/90 border-b-2 border-indigo-950' :
+        'bg-slate-50/90 border-b-2 border-indigo-500') : 'bg-transparent' } transition-all duration-300`}>
             <div className='flex items-center justify-between py-2'>
                 {/* Logo */}
-                <img src="/A-logo.png" alt="" className='w-14 md:w-24 lg:w-32' />
+                <img src="/A-logo.png" alt="" className='w-14 md:w-20' />
 
                 <div className='flex items-center gap-8'>
                     {/* Dark/light mode icon */}
