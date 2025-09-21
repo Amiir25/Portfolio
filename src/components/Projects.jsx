@@ -51,7 +51,9 @@ const Projects = ({ darkMode }) => {
         {/* CTA */}
         <div className='text-center'>
             <p className='md:text-xl tracking-wider mb-4'>More projects coming up!</p>
-            <a href="" className='text-gray-50 bg-gradient-to-r from-indigo-800 to-blue-600 p-2 rounded cursor-pointer font-medium hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600'>
+            <a
+            href="https://github.com/Amiir25" target='_blank'
+            className='text-gray-50 bg-gradient-to-r from-indigo-800 to-blue-600 p-2 rounded cursor-pointer font-medium hover:from-indigo-900 hover:to-blue-700 active:from-indigo-800 active:to-blue-600'>
                 Check my GitHub
             </a>
         </div>
