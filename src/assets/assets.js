@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faDiscord, faLinkedin, faTelegram, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 // Import skills
 import C from './skills/c.webp';
@@ -20,9 +21,8 @@ import GitHub from './skills/github.png';
 // Import Projects
 import appWorksDesktop from './projects/app-works-desktop.webp';
 import appWorksMobile from './projects/app-works-mobile.webp';
-import aplyzerDesktop from './projects/aplyzer-desktop.PNG';
-import aplyzerMobile from './projects/aplyzer-mobile.PNG';
-import { faDiscord, faLinkedin, faTelegram, faWhatsapp, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import aplyzerDesktop from './projects/aplyzer-desktop.webp';
+import aplyzerMobile from './projects/aplyzer-mobile.webp';
 
 
 // Export skills
