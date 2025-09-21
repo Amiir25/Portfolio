@@ -38,7 +38,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         'bg-slate-50/90 border-b-2 border-indigo-500') : 'bg-transparent' } transition-all duration-300`}>
             <div className='flex items-center justify-between py-2'>
                 {/* Logo */}
-                <img src="/A-logo.png" alt="" className='w-14 md:w-20' />
+                <img src="/A-logo.webp" alt="" className='w-14 md:w-20' />
 
                 <div className='flex items-center gap-8'>
                     {/* Dark/light mode icon */}
