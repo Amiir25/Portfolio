@@ -3,7 +3,7 @@ import { skills } from '../assets/assets'
 
 const Skills = ({ darkMode }) => {
   return (
-    <div className='mt-40 pb-10'>
+    <div id='skills' className='px-12 md:px-24 lg:px-48 xl:px-60 pt-40'>
       <h1 className='text-3xl sm:text-4xl md:text-6xl text-indigo-400 text-center font-bold mb-10 md:mb-20'>Skills & Technologies</h1>
       <div className='flex flex-wrap gap-4 items-center justify-center'>
         {
