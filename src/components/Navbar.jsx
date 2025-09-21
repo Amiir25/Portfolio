@@ -8,6 +8,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     const [smallScreen, setSmallScreen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
+    // Add Navbar style on page scrolling
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
@@ -16,6 +17,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    // Nav Links
+    const navLinks = [
+        { name: 'About', id: 'about' },
+        { name: 'Skills', id: 'skills' },
+        { name: 'Projects', id: 'projects' },
+        { name: 'Contact', id: 'contact' },
+    ];
+
+    // Scroll to section
+    const scrollToSection = (sectionId) => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        setSmallScreen(false);
+    }
 
     return (
         <nav className={`fixed top-0 left-0 right-0 px-6 md:px-12 lg:px-24 xl:px-32
@@ -38,11 +53,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
                     {/* Nav links */}
                     <div className='hidden md:flex gap-4 md:text-lg'>
-                        <a href="#" className='hover:text-indigo-200 active:text-white'>About</a>
-                        <a href="#" className='hover:text-indigo-200 active:text-white'>Skills</a>
-                        <a href="#" className='hover:text-indigo-200 active:text-white'>Education</a>
-                        <a href="#" className='hover:text-indigo-200 active:text-white'>Projects</a>
-                        <a href="#" className='hover:text-indigo-200 active:text-white'>Contact</a>
+                        {
+                            navLinks.map((navLink) => (
+                                <button
+                                key={navLink.id}
+                                onClick={ () => scrollToSection(navLink.id) }
+                                className='hover:text-indigo-200 active:text-white cursor-pointer'>
+                                    { navLink.name }
+                                </button>
+                            ))
+                        }
                     </div>
                 </div>
             </div>
@@ -56,11 +76,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                     <FontAwesomeIcon icon={ faClose } />
                 </div>
                 <div className='flex flex-col gap-4 w-fit mx-auto mt-20 text-2xl'>
-                    <a href="#" className='hover:text-indigo-200 active:text-white'>About</a>
-                    <a href="#" className='hover:text-indigo-200 active:text-white'>Skills</a>
-                    <a href="#" className='hover:text-indigo-200 active:text-white'>Education</a>
-                    <a href="#" className='hover:text-indigo-200 active:text-white'>Projects</a>
-                    <a href="#" className='hover:text-indigo-200 active:text-white'>Contact</a>
+                    {
+                        navLinks.map((navLink) => (
+                            <button
+                            key={navLink.id}
+                            onClick={ () => scrollToSection(navLink.id) }
+                            className='hover:text-indigo-200 active:text-white'>
+                                { navLink.name }
+                            </button>
+                        ))
+                    }
                 </div>
             </div>
         </nav>
