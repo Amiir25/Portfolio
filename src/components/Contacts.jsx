@@ -32,7 +32,7 @@ const Contacts = ({ darkMode }) => {
             <div className='flex items-center gap-4'>
                 {
                     letsChat.map((chat, i) => (
-                        <a href="" key={i}>
+                        <a href={ chat.link } key={i} target='_blank'>
                             <FontAwesomeIcon icon={ chat.icon }
                             className='text-blue-500 text-2xl p-2 rounded-lg bg-blue-500/20
                             hover:bg-blue-500/30 active:bg-blue-500/20' />
