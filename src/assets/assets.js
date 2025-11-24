@@ -78,10 +78,10 @@ export const projects = [
         liveLink: 'https://youtu.be/mr06eX3Et7k',
     },
     {
-        name: 'Elbethel Advertising',
+        name: 'Elbethel Advertising PLC',
         desktopImage: elbethelDesktop,
         mobileImage: elbethelMobile,
-        description: 'A fully responsive business platform I built using Next.js, TypeScript, and Tailwind CSS. It showcases the company’s services, portfolio, and supplied products with a modern UI and optimized performance. I also implemented SEO best practices, dynamic image handling, and a clean component structure to support scalability and long-term maintainability.',
+        description: 'A fully responsive business platform showcasing the company’s services, portfolio, and supplied products with a modern UI and optimized performance. I also implemented SEO best practices, dynamic image handling, and a clean component structure to support scalability and long-term maintainability.',
         tech: [TailwindCSS, NextJs, TypeScript],
         codeLink: 'https://github.com/Amiir25/ElbethelAdvertising.git',
         liveLink: 'https://elbetheladvert.vercel.app/',
