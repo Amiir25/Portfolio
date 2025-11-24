@@ -9,12 +9,12 @@ const Skills = ({ darkMode }) => {
         {
           skills.map((skill, i) => (
             <div key={i}
-            className={`flex flex-col items-center justify-center gap-2 w-18 md:w-26 h-20 md:h-24 m-4
+            className={`flex flex-col items-center justify-center gap-2 w-14 md:w-24 h-13 md:h-20 m-4
             ${ darkMode ? 'text-slate-50 bg-slate-800 border-slate-500 shadow-indigo-100/30' : 
             'text-slate-950 bg-slate-200 border-slate-400 shadow-indigo-950'} border rounded
             hover:shadow-2xl transition-all duration-100`}>
               <img src={ skill.image } alt={`${skill.name} Image`}
-                className='max-w-1/2' />
+                className='max-w-1/3 md:max-w-1/2' />
               <p className='text-[8px] text-center'>{ skill.name }</p>
             </div>
           ))
