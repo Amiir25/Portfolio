@@ -9,80 +9,52 @@ import HTML from './skills/html.webp';
 import CSS from './skills/css.webp';
 import JavaScript from './skills/javascript.webp';
 import Bootstrap from './skills/bootstrap.webp';
-import TailwindCSS from './skills/tailwind-css.png';
-import React from './skills/react.png';
-import Node from './skills/node.png';
-import Express from './skills/express.png';
-import MongoDB from './skills/mongodb.png';
+import TailwindCSS from './skills/tailwind-css.webp';
+import React from './skills/react.webp';
+import Node from './skills/node.webp';
+import Express from './skills/express.webp';
+import MongoDB from './skills/mongodb.webp';
 import MySQL from './skills/mysql.webp';
 import Git from './skills/git.webp';
 import GitHub from './skills/github.png';
+import Canva from './skills/Canva.webp';
+import Figma from './skills/Figma.webp';
+import NextJs from './skills/nextjs.webp';
+import reactRouter from './skills/react-router.webp';
+import RestAPI from './skills/rest-api.webp';
+import TypeScript from './skills/typescript.webp';
 
 // Import Projects
 import appWorksDesktop from './projects/app-works-desktop.webp';
 import appWorksMobile from './projects/app-works-mobile.webp';
 import aplyzerDesktop from './projects/aplyzer-desktop.webp';
 import aplyzerMobile from './projects/aplyzer-mobile.webp';
+import elbethelDesktop from './projects/elbethel-desktop.webp';
+import elbethelMobile from './projects/elbethel-mobile.webp';
 
 
 // Export skills
 export const skills = [
-    {
-        name: 'C',
-        image: C
-    },
-    {
-        name: 'Python',
-        image: Python
-    },
-    {
-        name: 'HTML',
-        image: HTML
-    },
-    {
-        name: 'CSS',
-        image: CSS
-    },
-    {
-        name: 'JavaScript',
-        image: JavaScript
-    },
-    {
-        name: 'Bootstrap',
-        image: Bootstrap
-    },
-    {
-        name: 'TailwindCSS',
-        image: TailwindCSS
-    },
-    {
-        name: 'React',
-        image: React
-    },
-    {
-        name: 'Node',
-        image: Node
-    },
-    {
-        name: 'Express',
-        image: Express
-    },
-    {
-        name: 'MongoDB',
-        image: MongoDB
-    },
-    {
-        name: 'MySQL',
-        image: MySQL
-    },
-    {
-        name: 'Git',
-        image: Git
-    },
-    {
-        name: 'GitHub',
-        image: GitHub
-    },
+    { name: 'C', image: C },
+    { name: 'Python', image: Python },
+    { name: 'Canva', image: Canva },
+    { name: 'Figma', image: Figma },
+    { name: 'HTML', image: HTML },
+    { name: 'CSS', image: CSS },
+    { name: 'JavaScript', image: JavaScript },
+    { name: 'Bootstrap', image: Bootstrap },
+    { name: 'TailwindCSS', image: TailwindCSS },
+    { name: 'React', image: React },
+    { name: 'Node', image: Node },
+    { name: 'Express', image: Express },
+    { name: 'Next.JS', image: NextJs },
+    { name: 'React Router', image: reactRouter },
+    { name: 'RestAPI', image: RestAPI },
+    { name: 'TypeScript', image: TypeScript },
+    { name: 'MongoDB', image: MongoDB },
+    { name: 'MySQL', image: MySQL },
+    { name: 'Git', image: Git },
+    { name: 'GitHub', image: GitHub },
 ];
 
 // ExportProjects
@@ -104,6 +76,15 @@ export const projects = [
         tech: [TailwindCSS, React, Node, Express, MySQL],
         codeLink: 'https://github.com/Amiir25/Aplyzer.git',
         liveLink: 'https://youtu.be/mr06eX3Et7k',
+    },
+    {
+        name: 'Elbethel Advertising',
+        desktopImage: elbethelDesktop,
+        mobileImage: elbethelMobile,
+        description: 'A fully responsive business platform I built using Next.js, TypeScript, and Tailwind CSS. It showcases the company’s services, portfolio, and supplied products with a modern UI and optimized performance. I also implemented SEO best practices, dynamic image handling, and a clean component structure to support scalability and long-term maintainability.',
+        tech: [TailwindCSS, NextJs, TypeScript],
+        codeLink: 'https://github.com/Amiir25/ElbethelAdvertising.git',
+        liveLink: 'https://elbetheladvert.vercel.app/',
     },
 ];
 
