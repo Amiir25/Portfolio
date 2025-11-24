@@ -31,16 +31,14 @@ const Projects = ({ darkMode }) => {
                                 ))
                             }
                         </div>
-                        <div className='flex items-center gap-8'>
+                        <div className='flex items-center gap-8 mt-4'>
                             <a href={ project.codeLink } target='_blank'
                             className='flex flex-col items-center gap-1 hover:text-indigo-400'>
-                                <FontAwesomeIcon icon={ faGithub } className='text-lg' />
-                                <span className='text-xs'>Code</span>
+                                <span className='text-sm text-blue-500 hover:text-blue-800 underline'>Code</span>
                             </a>
                             <a href={ project.liveLink } target='_blank'
                             className='flex flex-col items-center gap-1 hover:text-indigo-400'>
-                                <FontAwesomeIcon icon={ faLink } className='text-lg' />
-                                <span className='text-xs'>Demo</span>
+                                <span className='text-sm text-blue-500 hover:text-blue-800 underline'>Demo</span>
                             </a>
                         </div>
                     </div>
