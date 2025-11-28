@@ -31,6 +31,8 @@ import aplyzerDesktop from './projects/aplyzer-desktop.webp';
 import aplyzerMobile from './projects/aplyzer-mobile.webp';
 import elbethelDesktop from './projects/elbethel-desktop.webp';
 import elbethelMobile from './projects/elbethel-mobile.webp';
+import sabaHomesDesktop from './projects/saba-homes-desktop.webp';
+import sabaHomesMobile from './projects/saba-homes-mobile.webp';
 
 
 // Export skills
@@ -67,6 +69,15 @@ export const projects = [
         tech: [HTML, CSS, JavaScript],
         codeLink: 'https://github.com/Amiir25/AppWorks.git',
         liveLink: 'https://app-works.netlify.app/',
+    },
+    {
+        name: 'Saba Homes',
+        desktopImage: sabaHomesDesktop,
+        mobileImage: sabaHomesMobile,
+        description: 'A sleek, dynamic website for Saba Homes — a real estate firm providing comprehensive property solutions and development services. Highlights include a hero message showcasing featured listings, an overview of available properties and broker services, client testimonials, and pricing.',
+        tech: [TailwindCSS, React],
+        codeLink: 'https://github.com/Amiir25/SabaHomes.git',
+        liveLink: 'https://saba-homes.vercel.app/',
     },
     {
         name: 'Aplyzer',
